@@ -9,6 +9,9 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+def power(a, b):
+    return a ** b
+
 def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero!")
@@ -23,6 +26,8 @@ if __name__ == "__main__":
     if op == '+':
         result = add(x, y)
     elif op == '-':
+        elif op == '^':
+    result = power(x, y)
         result = subtract(x, y)
     elif op == '*':
         result = multiply(x, y)
